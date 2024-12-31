@@ -1,0 +1,38 @@
+hr {
+    margin-top: 8rem;
+    opacity: 0.2;
+    border: 1px solid var(--color-darkGrayishBlue);
+}
+
+footer {
+    height: fit-content;
+    margin-top: 1rem;
+}
+
+.attribution {
+    display: flex;
+    justify-content: space-between;
+}
+
+.frontendmentor {
+    margin-left: 0.5rem;
+}
+
+.oyabure {
+    margin-right: 0.5rem;
+}
+
+.attribution h1 {
+    font-size: 1.1rem;
+    line-height: 3rem;
+    color: var(--color-VeryDarkBlue);
+}
+
+.attribution a {
+    color: var(--color-darkGrayishBlue);
+    transition: color 0.4s ease-in-out;
+}
+
+.attribution a:hover {
+    color: var(--color-VeryDarkBlue);
+}

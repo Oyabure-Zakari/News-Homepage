@@ -1,0 +1,359 @@
+main {
+    margin-top: 4rem;
+}
+
+/*? mobile */
+.sec {
+    display: flex;
+    flex-direction: column;
+    /* outline: 2px solid red;  */
+}
+
+/** sec hero */
+.sec__pic {
+    width: 95%;
+    height: 30rem;
+    margin: 0 auto;
+    /* outline: 2px solid yellow;   */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/assets/images/image-web-3-mobile.jpg);
+}
+
+/** sec text */
+/** left text */
+.sec__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec__contentLeft {
+    width: 60%;
+    height: fit-content;
+    margin-top: 3.5rem;
+    /* outline: 2px solid purple;  */
+}
+
+.sec__contentLeft h1 {
+    font-size: 3rem;
+    margin-left: 0.5rem;
+    color: var(--color-VeryDarkBlue);
+}
+
+/** right text */
+.sec__contentRight {
+    width: 100%;
+    height: fit-content;
+    margin-top: 1.5rem;
+    /* outline: 2px solid darkgreen;  */
+}
+.sec__contentRight p {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: var(--color-darkGrayishBlue);
+}
+
+.sec__contentRight button {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    letter-spacing: 2px;
+    padding: 0.5rem 1rem;
+    color: var(--color-ofWhite);
+    background-color: var(--color-red);
+    transition: background-color 0.4s ease-in-out;
+}
+
+.sec__contentRight button:hover {
+    background-color: var(--color-VeryDarkBlue);
+}
+
+/** sec right */
+.sec__right {
+    margin-top: 8rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.sec__rightContent {
+    background-color: var(--color-VeryDarkBlue); 
+    height: 52rem;
+    overflow: hidden;
+}
+
+/** sec right text */
+.sec__rightContent h2 {
+    color: var(--color-orange); 
+    font-size: 4rem;
+    margin-left: 0.5rem;
+    margin-top: 3rem;
+}
+
+.sec__rightWriteup div {
+    margin-top: 4rem;
+}
+
+.sec__rightWriteup hr {
+    width: 95%;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.4;
+    border:1px solid var(--color-grayishBlue);
+}
+
+.sec__rightWriteup h3 {
+    color: var(--color-ofWhite); 
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+}
+
+.sec__rightWriteup h3:hover {
+    color: var(--color-orange); 
+}
+
+.sec__rightWriteup p {
+    color: var(--color-grayishBlue); 
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/*? extra small screen devices */
+@media ( min-width:475px ) {
+    
+
+}
+
+/*? small screen devices */
+@media ( min-width:640px ) {
+    .sec__pic {
+        padding-right: 2rem;
+    }
+
+     /** sec hero */
+    .sec__rightContent {
+        height: 53rem;
+    }
+
+    .sec__contentLeft h1 {
+        font-size: 6rem;
+    }
+
+    .sec__contentRight p {
+        font-size: 2.2rem;
+    }
+
+    .sec__contentRight button {
+        font-size: 2rem;
+        margin-top: 2rem;
+        padding: 1rem 1.5rem;
+    }
+    
+    /** sec right text */
+    .sec__rightContent h2 {
+        font-size: 5rem;
+        margin-top: 4rem;
+        padding: 0 1.5rem;
+    }
+
+    .sec__rightContent div {
+        margin-top: 2rem;
+    }
+
+    .sec__rightContent hr {
+        width: 98%;
+    }
+
+    .sec__rightWriteup h3 {
+        font-size: 2.5rem;
+        padding: 0 1.5rem;
+    }
+
+    .sec__rightWriteup p {
+        font-size: 2rem;
+        padding: 0 1.5rem;
+    }
+
+}
+
+/*? medium screen devices */
+@media ( min-width:768px ) {
+    .sec__rightContent {
+        height: 50rem;
+    }
+}
+
+/*? large screen devices */
+@media ( min-width:1024px ) {
+    /*? mobile */
+    .sec {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    /** sec hero */
+    .sec__pic {
+        width: 95%;
+        height: 30rem;
+        margin-left: 0.5rem;
+        background-image: url(/assets/images/image-web-3-desktop.jpg);
+    }
+
+    /** sec text */
+    /** left text */
+    .sec__content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sec__contentLeft {
+        width: 30%;
+    }
+    
+    .sec__contentLeft h1 {
+        font-size: 4rem;
+        line-height: 50px;
+    }
+
+    .sec__rightContent {
+        height: 48rem;
+    }
+
+    /** right text */
+    .sec__contentRight {
+        width: 70%;
+        margin-top: 3.5rem;
+    }
+
+    .sec__contentRight p {
+        font-size: 1.8rem;
+        margin-top: 0.5rem;
+    }
+
+    .sec__contentRight button {
+        font-size: 2rem;
+        margin-top: 2rem;
+        letter-spacing: 1px;
+        padding: 1rem 1.5rem;
+    }
+    
+
+    /** sec right */
+    .sec__right {
+        margin-top: 0;
+        width: 40%;
+        height: 100px;
+        margin-right: 0.5rem;
+    }
+
+    /** sec right text */
+    .sec__rightContent h2 {
+        font-size: 3rem;
+        padding: 0 1rem;
+        margin-top: 2rem;
+    }
+
+    .sec__rightWriteup div {
+        margin-top: 1rem;
+    }
+
+    .sec__rightWriteup hr {
+        width: 95%;
+        margin-top: 1.5rem;
+    }
+
+    .sec__rightWriteup h3 {
+        font-size: 1.9rem;
+        padding: 0 1rem;
+    }
+
+    .sec__rightWriteup p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+/*? extra large screen devices */
+@media ( min-width:1280px ) {
+    .sec__right {
+        width: 50%;
+    }
+
+    .sec__contentLeft {
+        width: 30%;
+    }
+    
+    .sec__contentLeft h1 {
+        font-size: 5rem;
+        line-height: 50px;
+    }
+
+    .sec__rightContent {
+        height: 48rem;
+    }
+
+    .sec__rightWriteup div {
+        margin-top: 2.5rem;
+    }
+
+    /** right text */
+    .sec__contentRight {
+        width: 68%;
+        margin-top: 3.5rem;
+    }
+
+    .sec__contentRight p {
+        font-size: 2.2rem;
+        margin-top: 0.5rem;
+    }
+
+    /** sec right text */
+    .sec__rightWriteup p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+/*? extra extra large screen devices */
+@media ( min-width:1536px ) {
+    .sec__rightContent {
+        height: 48rem; 
+    }
+
+    /** sec right text */
+    .sec__rightContent h2 {
+        font-size: 3rem;
+        padding: 0 1rem;
+        margin-top: 3rem;
+    }
+
+    .sec__rightWriteup div {
+        margin-top: 4rem;
+    }
+
+    .sec__rightWriteup hr {
+        width: 95%;
+        margin-top: 2rem;
+    }
+
+    .sec__rightWriteup h3 {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    .sec__rightWriteup p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
+}
